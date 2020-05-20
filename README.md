@@ -75,6 +75,7 @@ Why would you want to use this Action instead:
 | `toolchain` |          | Rust toolchain name to use                                               | string |         |
 | `args`      |          | Arguments for the cargo command                                          | string |         |     
 | `use-cross` |          | Use [`cross`](https://github.com/rust-embedded/cross) instead of `cargo` | bool   | false   |
+| `working-directory` |          | Set the working directory to run this command from | string   |    |
 
 ## Toolchain
 
