@@ -20,8 +20,8 @@ export async function run(actionInput: input.Input): Promise<void> {
     args.push(actionInput.command);
     args = args.concat(actionInput.args);
 
-    if (actionInput["working-directory"]) {
-        process.chdir(path.join(process.cwd(), actionInput["working-directory"]));
+    if (actionInput.workingDirectory) {
+        process.chdir(path.join(process.cwd(), actionInput.workingDirectory));
     }
 
     await program.call(args);

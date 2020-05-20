@@ -10,7 +10,7 @@ import stringArgv from "string-argv";
 export interface Input {
     command: string;
     toolchain?: string;
-    "working-directory"?: string;
+    workingDirectory?: string;
     args: string[];
     useCross: boolean;
 }
@@ -30,6 +30,6 @@ export function get(): Input {
         args: args,
         useCross: useCross,
         toolchain: toolchain || undefined,
-        "working-directory": workingDirectory || undefined,
+        workingDirectory: workingDirectory || undefined,
     };
 }
